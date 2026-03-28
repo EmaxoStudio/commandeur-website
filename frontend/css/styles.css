@@ -620,6 +620,13 @@ p {
   margin-top: 0.5rem;
 }
 
+.form__static-note {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  margin-top: 0.5rem;
+  max-width: none;
+}
+
 /* 13. Footer
    ============================================================ */
 .footer {
@@ -924,7 +931,7 @@ p {
   color: var(--text-primary);
 }
 
-.legal-content h2:first-child {
+.legal-content h2:first-of-type {
   margin-top: 0;
 }
 

@@ -22,6 +22,7 @@ function initBurgerMenu() {
   burger.addEventListener('click', function () {
     var isOpen = burger.classList.toggle('is-open');
     mobileNav.classList.toggle('is-open', isOpen);
+    mobileNav.setAttribute('aria-hidden', String(!isOpen));
     document.body.style.overflow = isOpen ? 'hidden' : '';
     burger.setAttribute('aria-expanded', String(isOpen));
   });
@@ -145,9 +146,12 @@ function setFieldError(field, errMsg, message) {
 function showSuccessState(form) {
   var btn = form.querySelector('[type="submit"]');
   if (btn) {
-    btn.textContent = 'Nachricht gesendet';
-    btn.disabled    = true;
+    btn.style.display = 'none';
   }
+  var note = document.createElement('p');
+  note.className   = 'form__static-note';
+  note.textContent = 'Bitte senden Sie uns Ihre Anfrage direkt per E-Mail an info@commandeurconsulting.de.';
+  form.appendChild(note);
 }
 
 /* File Input Label
