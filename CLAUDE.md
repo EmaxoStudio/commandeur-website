@@ -73,3 +73,38 @@ When a task spans both, split the work into a frontend step and a backend step, 
 - Do not add placeholder TODOs, stubs, or "coming soon" code.
 - Do not install packages without stating what the package is for and asking for approval first.
 - Do not suggest improvements at the end of a response unless asked.
+
+---
+
+## ZUSÄTZLICHE VERBINDLICHE BUILD-REGELN
+
+### FILE-HANDLING
+Claude darf nur Dateien ändern, die im aktiven Build-Block explizit freigegeben sind.
+
+### NO-SILENT-CREATION
+Claude darf keine neuen Dateien, Ordner oder Libraries erstellen, außer sie sind im Block ausdrücklich erlaubt.
+
+### RELATIVE-PATH-DISZIPLIN
+Alle Arbeiten erfolgen innerhalb der bestehenden Projektstruktur.
+Keine Verschiebung oder Veränderung der Ordnerstruktur.
+
+### KEEP-IT-READABLE
+HTML, CSS und JS müssen direkt lesbar bleiben.
+Keine unnötige Verschachtelung, keine künstliche Abstraktion.
+
+### NO-PLACEHOLDER-SPRAWL
+Keine leeren Sections, keine Dummy-Inhalte, keine „coming soon"-Elemente.
+
+### ONE-BLOCK-ONLY
+Es wird ausschließlich der aktuell freigegebene Build-Block umgesetzt.
+Keine Vorwegnahme zukünftiger Schritte.
+
+### RETURN-DISZIPLIN
+Am Ende immer exakt das vorgegebene Return-Format.
+Keine zusätzlichen Erklärtexte außerhalb des Formats.
+
+### LEGAL-CONTENT
+Impressum und Datenschutz werden nur strukturell eingebunden.
+Keine inhaltlichen Änderungen oder kreative Ergänzungen.
+
+---
