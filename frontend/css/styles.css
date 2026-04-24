@@ -1026,11 +1026,38 @@ p {
 }
 
 /* Recruiting process */
+.recruiting-intro {
+  border-bottom: 1px solid var(--border);
+  padding-bottom: var(--sp-xl);
+}
+
+.recruiting-leit {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+  margin-top: var(--sp-lg);
+}
+
+.recruiting-process {
+  padding-top: calc(var(--sp-xl) - 0.5rem);
+}
+
+.recruiting-process__intro {
+  max-width: 720px;
+}
+
+.recruiting-process__heading {
+  font-size: clamp(2rem, 4vw, 2.7rem);
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
 .process-list {
   display: flex;
   flex-direction: column;
   gap: 0;
   margin-top: var(--sp-lg);
+  border-top: 1px solid var(--border);
 }
 
 .process-step {
@@ -1040,10 +1067,6 @@ p {
   padding-block: var(--sp-md);
   border-bottom: 1px solid var(--border);
   transition: background var(--tr);
-}
-
-.process-step:first-child {
-  border-top: 1px solid var(--border);
 }
 
 .process-step:hover {
@@ -1813,6 +1836,10 @@ p {
   }
 
   .leistungen-leit {
+    grid-template-columns: 1fr;
+  }
+
+  .recruiting-leit {
     grid-template-columns: 1fr;
   }
 
