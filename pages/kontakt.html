@@ -6,7 +6,7 @@
   <title>Kontakt – Commandeur Consulting</title>
   <link rel="stylesheet" href="../frontend/css/styles.css">
 </head>
-<body>
+<body class="contact-page">
 
   <!-- Header -->
   <header class="header">
@@ -46,12 +46,33 @@
     <section class="hero hero--page section">
       <div class="container">
         <div class="hero__inner">
-          <span class="kicker">Kontakt</span>
+          <span class="kicker">Commandeur Consulting</span>
           <h1 class="hero__h1">Der nächste Schritt</h1>
-          <p class="hero__text lead">Wir arbeiten mit Unternehmen und Kandidaten, die wissen, was sie suchen. Wenn der Bedarf konkret ist, sprechen wir miteinander.</p>
+          <p class="hero__text lead">Wir arbeiten mit Unternehmen und Kandidaten, die wissen, was sie suchen.</p>
+          <p class="hero__text">Wenn der Bedarf konkret ist, sprechen wir miteinander.</p>
           <div class="hero__actions">
             <a href="tel:+4921666106557" class="btn btn--primary">Anrufen</a>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Kontaktinformationen -->
+    <section class="contact-overview section">
+      <div class="container">
+        <div class="contact-cards">
+          <article class="contact-card">
+            <h2 class="contact-card__title">Treffen Sie uns persönlich</h2>
+            <p class="contact-card__text">Wir freuen uns darauf, Sie und Ihr Unternehmen kennenzulernen.</p>
+          </article>
+          <article class="contact-card">
+            <h2 class="contact-card__title">Rufen Sie uns an</h2>
+            <p class="contact-card__value"><a href="tel:+4921666106557">+49 (0) 2166 6106557</a></p>
+          </article>
+          <article class="contact-card">
+            <h2 class="contact-card__title">Schreiben Sie uns</h2>
+            <p class="contact-card__value"><a href="mailto:info@commandeurconsulting.de">info@commandeurconsulting.de</a></p>
+          </article>
         </div>
       </div>
     </section>
@@ -61,18 +82,9 @@
       <div class="container">
         <div class="contact-grid">
           <div class="contact-info">
+            <span class="contact-info__eyebrow kicker">Kontaktformular</span>
             <h2 class="contact-info__heading">Sie haben Fragen oder möchten sich bewerben?</h2>
-            <p class="contact-info__text">Ob Unternehmen mit konkretem Besetzungsbedarf oder Kandidat auf der Suche nach dem nächsten Schritt – wir freuen uns auf Ihre Nachricht.</p>
-            <div class="contact-data">
-              <div class="contact-data__item">
-                <span class="contact-data__label">Telefon</span>
-                <span class="contact-data__value"><a href="tel:+4921666106557">+49 (0) 2166 6106557</a></span>
-              </div>
-              <div class="contact-data__item">
-                <span class="contact-data__label">E-Mail</span>
-                <span class="contact-data__value"><a href="mailto:info@commandeurconsulting.de">info@commandeurconsulting.de</a></span>
-              </div>
-            </div>
+            <p class="contact-info__text">Bei Interesse an einer Zusammenarbeit freuen wir uns über Ihre Kontaktaufnahme.</p>
           </div>
           <div class="contact-form">
             <form class="form" data-validate>
@@ -94,7 +106,7 @@
                   <input class="form__input" type="tel" id="phone" name="phone" placeholder="+49 ...">
                 </div>
                 <div class="form__group">
-                  <label class="form__label" for="type">Sie sind <span class="req">*</span></label>
+                  <label class="form__label" for="type">Sind Sie Unternehmer/in oder Kandidat/in? <span class="req">*</span></label>
                   <select class="form__select" id="type" name="type" required>
                     <option value="" disabled selected>Bitte wählen</option>
                     <option value="unternehmen">Unternehmen</option>
@@ -104,16 +116,16 @@
                 </div>
               </div>
               <div class="form__group">
-                <label class="form__label" for="message">Nachricht <span class="req">*</span></label>
+                <label class="form__label" for="message">Ihre Nachricht <span class="req">*</span></label>
                 <textarea class="form__textarea" id="message" name="message" placeholder="Ihr Anliegen…" required></textarea>
                 <span class="form__error-msg"></span>
               </div>
               <div class="form__group">
-                <label class="form__label">Datei anhängen (optional)</label>
+                <label class="form__label">Dateiupload</label>
                 <div class="form__file-wrapper">
                   <label class="form__file-label">
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21.44 11.05l-9.19 9.19a6 6 0 01-8.49-8.49l9.19-9.19a4 4 0 015.66 5.66l-9.2 9.19a2 2 0 01-2.83-2.83l8.49-8.48"/></svg>
-                    Datei auswählen
+                    Anhänge auswählen
                     <input class="form__file" type="file" name="file" accept=".pdf,.doc,.docx">
                   </label>
                 </div>
@@ -123,11 +135,11 @@
                 <div class="form__checkbox-group">
                   <input class="form__checkbox" type="checkbox" id="privacy" name="privacy" required>
                   <label class="form__checkbox-label" for="privacy">
-                    Ich habe die <a href="datenschutz.html">Datenschutzerklärung</a> gelesen und stimme der Verarbeitung meiner Daten zu. <span class="req">*</span>
+                    Ich habe die <a href="datenschutz.html">Datenschutzerklärung</a> zur Kenntnis genommen. Ich stimme einer elektronischen Speicherung und Verarbeitung meiner eingegebenen Daten zur Beantwortung meiner Anfrage zu. <span class="req">*</span>
                   </label>
                 </div>
               </div>
-              <button type="submit" class="btn btn--primary form__submit">Nachricht senden</button>
+              <button type="submit" class="btn btn--primary form__submit">Anfrage senden</button>
             </form>
           </div>
         </div>
@@ -165,7 +177,7 @@
         <p class="footer__copy">&copy; 2024 Commandeur Consulting. Alle Rechte vorbehalten.</p>
         <nav class="footer__legal" aria-label="Rechtliches">
           <a href="impressum.html" class="footer__link">Impressum</a>
-          <a href="datenschutz.html" class="footer__link">Datenschutz</a>
+          <a href="datenschutz.html" class="footer__link">Datenschutzerklärung</a>
         </nav>
       </div>
     </div>
