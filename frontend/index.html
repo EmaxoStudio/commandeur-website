@@ -6,20 +6,26 @@
   <title>Commandeur Consulting – Personalberatung für Tax, Audit und Legal</title>
   <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
+<body class="home-page">
 
   <!-- Header -->
   <header class="header">
     <div class="container header__inner">
-      <a href="index.html" class="header__logo">Commandeur <span>Consulting</span></a>
+      <a href="index.html" class="header__logo" aria-label="Commandeur Consulting Startseite">
+        <span class="header__logo-mark" aria-hidden="true">cc</span>
+        <span class="header__logo-text">
+          <span class="header__logo-name">Commandeur Consulting</span>
+          <span class="header__logo-tag">Personalberatung für Tax, Audit und Legal</span>
+        </span>
+      </a>
       <nav class="nav" aria-label="Hauptnavigation">
         <ul class="nav__list">
-          <li><a href="pages/ueber-uns.html" class="nav__link">Über uns</a></li>
-          <li><a href="pages/leistungen.html" class="nav__link">Leistungen</a></li>
-          <li><a href="pages/recruiting-prozess.html" class="nav__link">Recruiting-Prozess</a></li>
-          <li><a href="pages/kontakt.html" class="nav__link">Kontakt</a></li>
+          <li><a href="../pages/ueber-uns.html" class="nav__link">Über uns</a></li>
+          <li><a href="../pages/leistungen.html" class="nav__link">Leistungen</a></li>
+          <li><a href="../pages/recruiting-prozess.html" class="nav__link">Recruiting-Prozess</a></li>
+          <li><a href="../pages/kontakt.html" class="nav__link">Kontakt</a></li>
         </ul>
-        <a href="pages/kontakt.html" class="btn btn--outline nav__cta">Kontakt aufnehmen</a>
+        <a href="../pages/kontakt.html" class="btn btn--outline nav__cta">Kontakt aufnehmen</a>
       </nav>
       <button class="burger" aria-label="Navigation öffnen" aria-expanded="false">
         <span class="burger__bar"></span>
@@ -32,12 +38,12 @@
   <!-- Mobile Navigation -->
   <div class="mobile-nav" aria-hidden="true">
     <ul class="mobile-nav__list">
-      <li><a href="pages/ueber-uns.html" class="mobile-nav__link">Über uns</a></li>
-      <li><a href="pages/leistungen.html" class="mobile-nav__link">Leistungen</a></li>
-      <li><a href="pages/recruiting-prozess.html" class="mobile-nav__link">Recruiting-Prozess</a></li>
-      <li><a href="pages/kontakt.html" class="mobile-nav__link">Kontakt</a></li>
+      <li><a href="../pages/ueber-uns.html" class="mobile-nav__link">Über uns</a></li>
+      <li><a href="../pages/leistungen.html" class="mobile-nav__link">Leistungen</a></li>
+      <li><a href="../pages/recruiting-prozess.html" class="mobile-nav__link">Recruiting-Prozess</a></li>
+      <li><a href="../pages/kontakt.html" class="mobile-nav__link">Kontakt</a></li>
     </ul>
-    <a href="pages/kontakt.html" class="btn btn--outline mobile-nav__cta">Kontakt aufnehmen</a>
+    <a href="../pages/kontakt.html" class="btn btn--outline mobile-nav__cta">Kontakt aufnehmen</a>
   </div>
 
   <main>
@@ -50,15 +56,15 @@
           <h1 class="hero__h1">Personalberatung für Steuerberatung, Wirtschaftsprüfung und Rechtsberatung</h1>
           <p class="hero__text">Commandeur Consulting ist eine spezialisierte Personalberatung für Tax, Audit und Legal. Wir unterstützen Kanzleien und Unternehmen bei der Besetzung von Fach- und Führungspositionen und begleiten Kandidaten in strukturierten Wechselprozessen – diskret, präzise und mit klarer Kommunikation.</p>
           <div class="hero__actions">
-            <a href="pages/ueber-uns.html" class="btn btn--primary">Wer wir sind</a>
-            <a href="pages/leistungen.html" class="btn btn--outline">Unsere Leistungen</a>
+            <a href="../pages/ueber-uns.html" class="btn btn--primary">Wer wir sind</a>
+            <a href="../pages/leistungen.html" class="btn btn--outline">Unsere Leistungen</a>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Leistungskarten -->
-    <section class="section">
+    <section class="section section--cards">
       <div class="container">
         <div class="cards">
           <div class="card">
@@ -111,7 +117,7 @@
                 <span class="contact-data__value"><a href="mailto:info@commandeurconsulting.de">info@commandeurconsulting.de</a></span>
               </div>
             </div>
-            <a href="pages/kontakt.html" class="btn btn--outline">Zur Kontaktseite</a>
+            <a href="../pages/kontakt.html" class="btn btn--outline">Zur Kontaktseite</a>
           </div>
           <div class="contact-form">
             <form class="form" data-validate>
@@ -162,7 +168,7 @@
                 <div class="form__checkbox-group">
                   <input class="form__checkbox" type="checkbox" id="privacy" name="privacy" required>
                   <label class="form__checkbox-label" for="privacy">
-                    Ich habe die <a href="pages/datenschutz.html">Datenschutzerklärung</a> gelesen und stimme der Verarbeitung meiner Daten zu. <span class="req">*</span>
+                    Ich habe die <a href="../pages/datenschutz.html">Datenschutzerklärung</a> gelesen und stimme der Verarbeitung meiner Daten zu. <span class="req">*</span>
                   </label>
                 </div>
               </div>
@@ -186,10 +192,10 @@
         <div>
           <p class="footer__heading">Navigation</p>
           <ul class="footer__links">
-            <li><a href="pages/ueber-uns.html" class="footer__link">Über uns</a></li>
-            <li><a href="pages/leistungen.html" class="footer__link">Leistungen</a></li>
-            <li><a href="pages/recruiting-prozess.html" class="footer__link">Recruiting-Prozess</a></li>
-            <li><a href="pages/kontakt.html" class="footer__link">Kontakt</a></li>
+            <li><a href="../pages/ueber-uns.html" class="footer__link">Über uns</a></li>
+            <li><a href="../pages/leistungen.html" class="footer__link">Leistungen</a></li>
+            <li><a href="../pages/recruiting-prozess.html" class="footer__link">Recruiting-Prozess</a></li>
+            <li><a href="../pages/kontakt.html" class="footer__link">Kontakt</a></li>
           </ul>
         </div>
         <div>
@@ -203,8 +209,8 @@
       <div class="footer__bottom">
         <p class="footer__copy">&copy; 2024 Commandeur Consulting. Alle Rechte vorbehalten.</p>
         <nav class="footer__legal" aria-label="Rechtliches">
-          <a href="pages/impressum.html" class="footer__link">Impressum</a>
-          <a href="pages/datenschutz.html" class="footer__link">Datenschutz</a>
+          <a href="../pages/impressum.html" class="footer__link">Impressum</a>
+          <a href="../pages/datenschutz.html" class="footer__link">Datenschutz</a>
         </nav>
       </div>
     </div>
