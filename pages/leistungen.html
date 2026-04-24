@@ -6,12 +6,18 @@
   <title>Leistungen – Commandeur Consulting</title>
   <link rel="stylesheet" href="../frontend/css/styles.css">
 </head>
-<body>
+<body class="services-page">
 
   <!-- Header -->
   <header class="header">
     <div class="container header__inner">
-      <a href="../frontend/index.html" class="header__logo">Commandeur <span>Consulting</span></a>
+      <a href="../frontend/index.html" class="header__logo" aria-label="Commandeur Consulting Startseite">
+        <span class="header__logo-mark" aria-hidden="true">cc</span>
+        <span class="header__logo-text">
+          <span class="header__logo-name">Commandeur Consulting</span>
+          <span class="header__logo-tag">Personalberatung für Tax, Audit und Legal</span>
+        </span>
+      </a>
       <nav class="nav" aria-label="Hauptnavigation">
         <ul class="nav__list">
           <li><a href="ueber-uns.html" class="nav__link">Über uns</a></li>
@@ -141,24 +147,25 @@
   <footer class="footer">
     <div class="container">
       <div class="footer__inner">
-        <div>
-          <span class="footer__brand">Commandeur Consulting</span>
-          <p class="footer__tagline">Personalberatung für Tax, Audit und Legal.</p>
+        <div class="footer__logo-block">
+          <span class="footer__mark" aria-hidden="true">cc</span>
         </div>
         <div>
-          <p class="footer__heading">Navigation</p>
-          <ul class="footer__links">
-            <li><a href="ueber-uns.html" class="footer__link">Über uns</a></li>
-            <li><a href="leistungen.html" class="footer__link">Leistungen</a></li>
-            <li><a href="recruiting-prozess.html" class="footer__link">Recruiting-Prozess</a></li>
-            <li><a href="kontakt.html" class="footer__link">Kontakt</a></li>
-          </ul>
+          <p class="footer__heading">Treffen Sie uns persönlich</p>
+          <p class="footer__text">Wir freuen uns darauf, Sie und Ihr Unternehmen kennenzulernen.</p>
         </div>
         <div>
-          <p class="footer__heading">Kontakt</p>
+          <p class="footer__heading">Kontaktieren Sie uns</p>
           <ul class="footer__links">
             <li><a href="tel:+4921666106557" class="footer__link">+49 (0) 2166 6106557</a></li>
             <li><a href="mailto:info@commandeurconsulting.de" class="footer__link">info@commandeurconsulting.de</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer__heading">Rechtliches</p>
+          <ul class="footer__links">
+            <li><a href="impressum.html" class="footer__link">Impressum</a></li>
+            <li><a href="datenschutz.html" class="footer__link">Datenschutzerklärung</a></li>
           </ul>
         </div>
       </div>
