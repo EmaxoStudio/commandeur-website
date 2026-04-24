@@ -16,3 +16,15 @@ Website rebuild project.
 
 - **Phase 1** — Public website (current)
 - **Phase 2** — Admin system (future)
+
+## Local Preview
+
+Run from the project root:
+
+```bash
+python3 -m http.server 8080
+```
+
+Then open: `http://localhost:8080/frontend/index.html`
+
+No build step required. All assets are served via relative paths from the project root.
