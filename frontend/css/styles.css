@@ -1074,7 +1074,15 @@ p {
 }
 
 .home-page .nav__cta {
-  display: none;
+  display: inline-flex;
+  min-height: 2.5rem;
+  padding: 0.62rem 1rem;
+  margin-left: 0.35rem;
+  border-color: rgba(209, 238, 235, 0.24);
+  background: rgba(9, 17, 33, 0.34);
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 0.82rem;
+  font-weight: 500;
 }
 
 .home-page .hero {
@@ -1148,6 +1156,11 @@ p {
   background: rgba(255, 255, 255, 0.02);
 }
 
+.home-page .nav__cta:hover {
+  border-color: rgba(209, 238, 235, 0.42);
+  background: rgba(9, 17, 33, 0.48);
+}
+
 .home-page .cards {
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 0;
@@ -1175,15 +1188,129 @@ p {
 }
 
 .home-page .card__label {
+  position: relative;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 3.4rem;
-  aspect-ratio: 1;
+  width: 3.2rem;
+  height: 2.7rem;
   margin: 0 auto 1rem;
-  border: 1px solid rgba(209, 238, 235, 0.62);
-  border-radius: 50%;
   color: var(--accent-mid);
+}
+
+.home-page .card__label::before,
+.home-page .card__label::after,
+.home-page .card__label span,
+.home-page .card__label span::before,
+.home-page .card__label span::after {
+  content: "";
+  position: absolute;
+  box-sizing: border-box;
+  border-color: rgba(209, 238, 235, 0.78);
+  color: var(--accent-mid);
+}
+
+.home-page .card__label--search::before {
+  width: 1.15rem;
+  height: 1.15rem;
+  border: 1.4px solid rgba(209, 238, 235, 0.78);
+  border-radius: 50%;
+  top: 0.55rem;
+  left: 0.65rem;
+}
+
+.home-page .card__label--search::after {
+  width: 0.82rem;
+  border-top: 1.4px solid rgba(209, 238, 235, 0.78);
+  transform: rotate(45deg);
+  right: 0.52rem;
+  bottom: 0.62rem;
+}
+
+.home-page .card__label--network::before,
+.home-page .card__label--network::after,
+.home-page .card__label--network span::before {
+  width: 0.42rem;
+  height: 0.42rem;
+  border: 1.4px solid rgba(209, 238, 235, 0.78);
+  border-radius: 50%;
+}
+
+.home-page .card__label--network::before {
+  top: 0.55rem;
+  left: 1.38rem;
+}
+
+.home-page .card__label--network::after {
+  bottom: 0.48rem;
+  left: 0.56rem;
+}
+
+.home-page .card__label--network span::before {
+  bottom: 0.48rem;
+  right: 0.56rem;
+}
+
+.home-page .card__label--network span::after {
+  inset: 0;
+  background:
+    linear-gradient(rgba(209, 238, 235, 0.78), rgba(209, 238, 235, 0.78)) center 0.95rem / 1.4px 0.82rem no-repeat,
+    linear-gradient(60deg, transparent 47%, rgba(209, 238, 235, 0.78) 48%, rgba(209, 238, 235, 0.78) 52%, transparent 53%) left 0.68rem bottom 0.78rem / 1.1rem 0.9rem no-repeat,
+    linear-gradient(-60deg, transparent 47%, rgba(209, 238, 235, 0.78) 48%, rgba(209, 238, 235, 0.78) 52%, transparent 53%) right 0.68rem bottom 0.78rem / 1.1rem 0.9rem no-repeat;
+}
+
+.home-page .card__label--path::before {
+  width: 2rem;
+  height: 1rem;
+  border-left: 1.4px solid rgba(209, 238, 235, 0.78);
+  border-bottom: 1.4px solid rgba(209, 238, 235, 0.78);
+  left: 0.58rem;
+  top: 0.52rem;
+}
+
+.home-page .card__label--path::after {
+  width: 0.58rem;
+  height: 0.58rem;
+  border-top: 1.4px solid rgba(209, 238, 235, 0.78);
+  border-right: 1.4px solid rgba(209, 238, 235, 0.78);
+  transform: rotate(45deg);
+  right: 0.52rem;
+  top: 1.2rem;
+}
+
+.home-page .card__label--path span::before {
+  width: 0.34rem;
+  height: 0.34rem;
+  border: 1.4px solid rgba(209, 238, 235, 0.78);
+  border-radius: 50%;
+  left: 0.5rem;
+  top: 0.42rem;
+}
+
+.home-page .card__label--insight::before {
+  width: 1.55rem;
+  height: 1.55rem;
+  border: 1.4px solid rgba(209, 238, 235, 0.78);
+  border-radius: 50%;
+  top: 0.42rem;
+  left: 0.82rem;
+}
+
+.home-page .card__label--insight::after {
+  width: 0.28rem;
+  height: 0.78rem;
+  background: rgba(209, 238, 235, 0.78);
+  top: 0.8rem;
+  left: 1.46rem;
+}
+
+.home-page .card__label--insight span::before {
+  width: 0.28rem;
+  height: 0.28rem;
+  background: rgba(209, 238, 235, 0.78);
+  border-radius: 50%;
+  bottom: 0.5rem;
+  left: 1.46rem;
 }
 
 .home-page .card__title {
@@ -1231,11 +1358,11 @@ p {
   position: absolute;
   top: 0;
   left: 50%;
-  width: 7rem;
-  height: 2rem;
+  width: 6rem;
+  height: 1.4rem;
   transform: translate(-50%, -50%);
-  background: rgba(209, 238, 235, 0.94);
-  clip-path: polygon(0 0, 50% 100%, 100% 0, 84% 0, 50% 68%, 16% 0);
+  background: linear-gradient(180deg, rgba(213, 239, 235, 0.95) 0%, rgba(213, 239, 235, 0.72) 100%);
+  clip-path: polygon(0 0, 50% 100%, 100% 0);
 }
 
 .home-page .contact-section__intro {
@@ -1452,6 +1579,10 @@ p {
 
   .home-page .card {
     min-height: auto;
+  }
+
+  .home-page .card__label {
+    margin-bottom: 0.85rem;
   }
 
   .home-page .contact-section {
