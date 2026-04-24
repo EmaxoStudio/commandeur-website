@@ -103,22 +103,12 @@
     <!-- Kontaktformular -->
     <section class="contact-section section">
       <div class="container">
+        <div class="contact-section__intro">
+          <span class="contact-section__eyebrow kicker">Kontakt</span>
+          <h2 class="contact-section__heading">Sie haben Fragen oder möchten sich bewerben?</h2>
+          <p class="contact-section__lead">Sie haben Fragen zu unseren Leistungen oder möchten Teil unseres Teams werden? Wir freuen uns auf Ihre Bewerbung oder Ihr Anliegen – kontaktieren Sie uns einfach und unverbindlich.</p>
+        </div>
         <div class="contact-grid">
-          <div class="contact-info">
-            <h2 class="contact-info__heading">Sie haben Fragen oder möchten sich bewerben?</h2>
-            <p class="contact-info__text">Sie haben Fragen zu unseren Leistungen oder möchten Teil unseres Teams werden? Wir freuen uns auf Ihre Bewerbung oder Ihr Anliegen – kontaktieren Sie uns einfach und unverbindlich.</p>
-            <div class="contact-data">
-              <div class="contact-data__item">
-                <span class="contact-data__label">Telefon</span>
-                <span class="contact-data__value"><a href="tel:+4921666106557">+49 (0) 2166 6106557</a></span>
-              </div>
-              <div class="contact-data__item">
-                <span class="contact-data__label">E-Mail</span>
-                <span class="contact-data__value"><a href="mailto:info@commandeurconsulting.de">info@commandeurconsulting.de</a></span>
-              </div>
-            </div>
-            <a href="../pages/kontakt.html" class="btn btn--outline">Zur Kontaktseite</a>
-          </div>
           <div class="contact-form">
             <form class="form" data-validate>
               <div class="form__row">
@@ -132,12 +122,12 @@
                   <input class="form__input" type="email" id="email" name="email" placeholder="ihre@email.de" required>
                   <span class="form__error-msg"></span>
                 </div>
-              </div>
-              <div class="form__row">
                 <div class="form__group">
                   <label class="form__label" for="phone">Telefonnummer</label>
                   <input class="form__input" type="tel" id="phone" name="phone" placeholder="+49 ...">
                 </div>
+              </div>
+              <div class="form__row">
                 <div class="form__group">
                   <label class="form__label" for="type">Sie sind <span class="req">*</span></label>
                   <select class="form__select" id="type" name="type" required>
@@ -185,24 +175,25 @@
   <footer class="footer">
     <div class="container">
       <div class="footer__inner">
-        <div>
-          <span class="footer__brand">Commandeur Consulting</span>
-          <p class="footer__tagline">Personalberatung für Tax, Audit und Legal.</p>
+        <div class="footer__logo-block">
+          <span class="footer__mark" aria-hidden="true">cc</span>
         </div>
         <div>
-          <p class="footer__heading">Navigation</p>
-          <ul class="footer__links">
-            <li><a href="../pages/ueber-uns.html" class="footer__link">Über uns</a></li>
-            <li><a href="../pages/leistungen.html" class="footer__link">Leistungen</a></li>
-            <li><a href="../pages/recruiting-prozess.html" class="footer__link">Recruiting-Prozess</a></li>
-            <li><a href="../pages/kontakt.html" class="footer__link">Kontakt</a></li>
-          </ul>
+          <p class="footer__heading">Treffen Sie uns persönlich</p>
+          <p class="footer__text">Wir freuen uns darauf, Sie und Ihr Unternehmen kennenzulernen.</p>
         </div>
         <div>
-          <p class="footer__heading">Kontakt</p>
+          <p class="footer__heading">Kontaktieren Sie uns</p>
           <ul class="footer__links">
             <li><a href="tel:+4921666106557" class="footer__link">+49 (0) 2166 6106557</a></li>
             <li><a href="mailto:info@commandeurconsulting.de" class="footer__link">info@commandeurconsulting.de</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer__heading">Rechtliches</p>
+          <ul class="footer__links">
+            <li><a href="../pages/impressum.html" class="footer__link">Impressum</a></li>
+            <li><a href="../pages/datenschutz.html" class="footer__link">Datenschutz</a></li>
           </ul>
         </div>
       </div>
