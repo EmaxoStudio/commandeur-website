@@ -6,7 +6,7 @@
   <title>Über uns – Commandeur Consulting</title>
   <link rel="stylesheet" href="../frontend/css/styles.css">
 </head>
-<body>
+<body class="about-page">
 
   <!-- Header -->
   <header class="header">
@@ -46,7 +46,7 @@
     <section class="hero hero--page section">
       <div class="container">
         <div class="hero__inner">
-          <span class="kicker">Über uns</span>
+          <span class="kicker">Commandeur Consulting</span>
           <h1 class="hero__h1">Personalberatung. Klar geführt.</h1>
           <p class="hero__text lead">Im Mittelpunkt steht eine Zusammenarbeit, die auf Verbindlichkeit, Einordnung und Verantwortung basiert.</p>
         </div>
@@ -56,47 +56,60 @@
     <!-- Statement -->
     <section class="about-statement section">
       <div class="container">
-        <p class="about-statement__text">Wir arbeiten mit klaren Mandaten und definierten Erwartungen.</p>
-        <div style="height: var(--sp-lg);"></div>
-        <p style="max-width: 72ch; color: var(--text-secondary); font-size: 1rem; line-height: 1.75;">Unsere Arbeit richtet sich an Unternehmen und Kandidaten, die Entscheidungen bewusst treffen. Wir schaffen einen Rahmen, in dem Positionen realistisch eingeordnet, Erwartungen klar formuliert und Gespräche zielgerichtet geführt werden.</p>
+        <div class="about-statement__grid">
+          <p class="about-statement__text">Wir arbeiten mit klaren Mandaten und definierten Erwartungen.</p>
+          <p class="about-statement__detail">Unsere Arbeit richtet sich an Unternehmen und Kandidaten, die Entscheidungen bewusst treffen. Wir schaffen einen Rahmen, in dem Positionen realistisch eingeordnet, Erwartungen klar formuliert und Gespräche zielgerichtet geführt werden.</p>
+        </div>
       </div>
     </section>
 
     <!-- Ansprechpartnerin -->
-    <section class="section">
+    <section class="about-contact section">
       <div class="container">
+        <div class="about-contact__heading">
+          <h2>Ihre Ansprechpartnerin</h2>
+        </div>
         <div class="about-person">
-          <div>
-            <span class="kicker">Ansprechpartnerin</span>
-            <h2>Veronika Commandeur</h2>
-            <p class="mt-sm" style="font-size: 0.9rem; color: var(--text-muted);">Geschäftsführerin</p>
-            <p class="mt-md">Veronika Commandeur verbindet fachliche Einordnung mit einem klaren Prozessverständnis. Ihr Ansatz ist geprägt von Verlässlichkeit, direkter Kommunikation und dem Anspruch, Lösungen zu entwickeln, die langfristig Bestand haben.</p>
+          <div class="about-person__card">
+            <div class="about-person__portrait" aria-hidden="true">VC</div>
+            <h3 class="about-person__name">Veronika Commandeur</h3>
+            <p class="about-person__role">Geschäftsführerin</p>
           </div>
-          <div>
-            <span class="kicker">Grundsätze</span>
-            <div class="about-principles">
-              <div class="principle">
-                <p class="principle__num">01</p>
-                <p class="principle__title">Verbindlichkeit</p>
-              </div>
-              <div class="principle">
-                <p class="principle__num">02</p>
-                <p class="principle__title">Transparenz</p>
-              </div>
-              <div class="principle">
-                <p class="principle__num">03</p>
-                <p class="principle__title">Diskretion</p>
-              </div>
-              <div class="principle">
-                <p class="principle__num">04</p>
-                <p class="principle__title">Fokus</p>
-              </div>
-              <div class="principle">
-                <p class="principle__num">05</p>
-                <p class="principle__title">Langfristige Partnerschaften</p>
-              </div>
-            </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Grundsätze -->
+    <section class="about-values section">
+      <div class="container">
+        <div class="about-values__intro">
+          <span class="about-values__eyebrow">Unser Anspruch</span>
+          <h2 class="about-values__heading">Grundsätze unserer Arbeit</h2>
+        </div>
+        <div class="about-principles">
+          <div class="principle">
+            <p class="principle__title">Verbindlichkeit</p>
+            <p class="principle__text">Zusagen, Zeitpläne und Rückmeldungen werden klar abgestimmt und eingehalten.</p>
           </div>
+          <div class="principle">
+            <p class="principle__title">Transparenz</p>
+            <p class="principle__text">Unser Prozess ist jederzeit nachvollziehbar und wir agieren immer im besten Interesse unserer Partner.</p>
+          </div>
+          <div class="principle">
+            <p class="principle__title">Diskretion</p>
+            <p class="principle__text">Informationen, Gespräche und Prozesse werden vertraulich behandelt und kontrolliert gesteuert.</p>
+          </div>
+          <div class="principle">
+            <p class="principle__title">Fokus</p>
+            <p class="principle__text">Fortschritt entsteht durch klare Schritte, nicht durch Aktionismus.</p>
+          </div>
+          <div class="principle">
+            <p class="principle__title">Langfristige Partnerschaften</p>
+            <p class="principle__text">Besetzungen werden nicht isoliert betrachtet, sondern im Zusammenhang weiterer Entwicklungen.</p>
+          </div>
+        </div>
+        <div class="cta-section about-values__cta">
+          <a href="leistungen.html" class="btn btn--outline">Erfahren Sie mehr</a>
         </div>
       </div>
     </section>
@@ -107,13 +120,6 @@
         <p class="about-closing__quote">&bdquo;Zusammenarbeit ist eine Entscheidung.&ldquo;</p>
       </div>
     </div>
-
-    <!-- CTA -->
-    <section class="cta-section section">
-      <div class="container">
-        <a href="kontakt.html" class="btn btn--primary">Kontakt aufnehmen</a>
-      </div>
-    </section>
 
   </main>
 
@@ -146,7 +152,7 @@
         <p class="footer__copy">&copy; 2024 Commandeur Consulting. Alle Rechte vorbehalten.</p>
         <nav class="footer__legal" aria-label="Rechtliches">
           <a href="impressum.html" class="footer__link">Impressum</a>
-          <a href="datenschutz.html" class="footer__link">Datenschutz</a>
+          <a href="datenschutz.html" class="footer__link">Datenschutzerklärung</a>
         </nav>
       </div>
     </div>

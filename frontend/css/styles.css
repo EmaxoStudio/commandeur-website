@@ -722,6 +722,13 @@ p {
   border-bottom: 1px solid var(--border);
 }
 
+.about-statement__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.9fr);
+  gap: var(--sp-xl);
+  align-items: start;
+}
+
 .about-statement__text {
   font-size: clamp(1.15rem, 2vw, 1.4rem);
   font-weight: 400;
@@ -730,6 +737,12 @@ p {
   max-width: 72ch;
   border-left: 2px solid var(--accent-mid);
   padding-left: var(--sp-md);
+}
+
+.about-statement__detail {
+  font-size: 1rem;
+  line-height: 1.75;
+  max-width: 48ch;
 }
 
 .about-principles {
@@ -767,27 +780,137 @@ p {
   color: var(--text-primary);
 }
 
+.principle__text {
+  margin-top: 0.75rem;
+  max-width: none;
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
 .about-person {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--sp-xl);
+  display: flex;
+  justify-content: center;
+}
+
+.about-contact {
+  padding-top: calc(var(--sp-xl) - 0.5rem);
+}
+
+.about-contact__heading {
+  text-align: center;
+  margin-bottom: var(--sp-lg);
+}
+
+.about-contact__heading h2 {
+  font-size: clamp(2rem, 3.8vw, 2.8rem);
+  font-weight: 500;
+}
+
+.about-person__card {
+  width: min(100%, 430px);
+  text-align: center;
+}
+
+.about-person__portrait {
+  display: flex;
   align-items: center;
+  justify-content: center;
+  width: min(100%, 360px);
+  aspect-ratio: 0.75;
+  margin: 0 auto 1.5rem;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background:
+    radial-gradient(circle at top, rgba(255, 255, 255, 0.08), transparent 52%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.01));
+  color: rgba(255, 255, 255, 0.72);
+  font-size: clamp(2rem, 6vw, 3.2rem);
+  letter-spacing: 0.1em;
+}
+
+.about-person__name {
+  font-size: 1.25rem;
+  line-height: 1.4;
+}
+
+.about-person__role {
+  margin-top: 0.45rem;
+  font-size: 0.95rem;
+  color: var(--accent-mid);
+  max-width: none;
+}
+
+.about-values {
+  background: linear-gradient(90deg, rgba(35, 54, 91, 1) 0%, rgba(60, 83, 133, 1) 100%);
+  border-top: 1px solid rgba(209, 238, 235, 0.12);
+  border-bottom: 1px solid rgba(209, 238, 235, 0.12);
+}
+
+.about-values__intro {
+  text-align: center;
+  margin-bottom: var(--sp-lg);
+}
+
+.about-values__eyebrow {
+  display: block;
+  margin-bottom: 0.6rem;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.about-values__heading {
+  font-size: clamp(2rem, 4vw, 2.9rem);
+  font-weight: 500;
+}
+
+.about-values .about-principles {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  margin-top: 0;
+}
+
+.about-values .principle {
+  border: 1px solid rgba(209, 238, 235, 0.8);
+  border-radius: 6px;
+  background: transparent;
+  text-align: center;
+  padding: 1.5rem 1.25rem;
+}
+
+.about-values .principle__title {
+  font-size: 1.2rem;
+}
+
+.about-values .principle__text {
+  color: rgba(255, 255, 255, 0.88);
+}
+
+.about-values .principle__num {
+  display: none;
+}
+
+.about-values__cta {
+  border-top: 0;
+  padding-block: 2rem 0;
 }
 
 .about-closing {
-  background: var(--bg-surface);
-  border-top: 1px solid var(--border);
-  border-bottom: 1px solid var(--border);
-  padding-block: var(--sp-xl);
+  background: linear-gradient(180deg, rgba(12, 16, 37, 0.96) 0%, rgba(8, 11, 25, 1) 100%);
+  padding-block: 6rem;
   text-align: center;
 }
 
 .about-closing__quote {
-  font-size: clamp(1.3rem, 2.5vw, 1.75rem);
+  font-size: clamp(2rem, 4vw, 2.6rem);
   font-weight: 500;
-  color: var(--text-secondary);
-  font-style: italic;
+  color: var(--text-primary);
+  font-style: normal;
   letter-spacing: -0.01em;
+  max-width: 26ch;
+  margin: 0 auto;
 }
 
 /* Leistungen */
@@ -1651,6 +1774,15 @@ p {
   }
 
   .about-person {
+    justify-content: stretch;
+  }
+
+  .about-statement__grid {
+    grid-template-columns: 1fr;
+    gap: var(--sp-lg);
+  }
+
+  .about-values .about-principles {
     grid-template-columns: 1fr;
   }
 
@@ -1689,6 +1821,10 @@ p {
 
   .about-principles {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .about-values .about-principles {
+    grid-template-columns: 1fr;
   }
 
   .process-step {
