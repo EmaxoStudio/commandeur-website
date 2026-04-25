@@ -1164,6 +1164,14 @@ p {
   color: var(--text-primary);
 }
 
+.leit-card__text {
+  margin-top: 0.7rem;
+  max-width: none;
+  font-size: 0.9rem;
+  line-height: 1.7;
+  color: var(--text-secondary);
+}
+
 .leistungen-detail {
   border-bottom: 1px solid var(--border);
   padding-block: calc(var(--sp-xl) - 0.4rem);
@@ -1218,6 +1226,10 @@ p {
 .detail-block__text--lead {
   font-size: 1.02rem;
   color: var(--text-primary);
+}
+
+.detail-block__cta {
+  margin-top: 1rem;
 }
 
 .services-contact {
