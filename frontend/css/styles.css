@@ -742,9 +742,9 @@ p {
   gap: 0.45rem;
   margin-top: 0.9rem;
   padding: 1rem 1.1rem;
-  border: 1px solid rgba(209, 238, 235, 0.18);
+  border: 1px solid rgba(17, 23, 48, 0.1);
   border-radius: 8px;
-  background: rgba(209, 238, 235, 0.06);
+  background: #f6f7f9;
   color: var(--text-secondary);
   max-width: 42rem;
 }
@@ -754,7 +754,7 @@ p {
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--accent-mid);
+  color: var(--text-primary);
 }
 
 .form__static-note span {
@@ -769,7 +769,7 @@ p {
 }
 
 .form__static-note a:hover {
-  color: var(--accent-mid);
+  color: var(--text-primary);
 }
 
 /* 13. Footer
@@ -960,10 +960,9 @@ p {
   margin: 0 auto 1.5rem;
   border-radius: 12px;
   border: 1px solid var(--border);
-  background:
-    radial-gradient(circle at top, rgba(255, 255, 255, 0.08), transparent 52%),
-    linear-gradient(180deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.01));
-  color: rgba(255, 255, 255, 0.72);
+  background: #f5f6f8;
+  box-shadow: 0 14px 32px rgba(17, 23, 48, 0.08);
+  color: var(--text-muted);
   font-size: clamp(2rem, 6vw, 3.2rem);
   letter-spacing: 0.1em;
 }
@@ -990,9 +989,9 @@ p {
 }
 
 .about-values {
-  background: linear-gradient(180deg, rgba(18, 28, 49, 0.98) 0%, rgba(25, 39, 67, 0.98) 100%);
-  border-top: 1px solid rgba(209, 238, 235, 0.12);
-  border-bottom: 1px solid rgba(209, 238, 235, 0.12);
+  background: var(--bg-surface);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
 }
 
 .about-values__intro {
@@ -1004,7 +1003,7 @@ p {
   display: block;
   margin-bottom: 0.6rem;
   font-size: 1rem;
-  color: rgba(255, 255, 255, 0.9);
+  color: var(--text-muted);
 }
 
 .about-values__heading {
@@ -1022,9 +1021,9 @@ p {
 }
 
 .about-values .principle {
-  border: 1px solid rgba(209, 238, 235, 0.5);
+  border: 1px solid var(--border);
   border-radius: 6px;
-  background: rgba(7, 12, 24, 0.16);
+  background: var(--bg-base);
   text-align: center;
   padding: 1.5rem 1.25rem;
 }
@@ -1034,7 +1033,7 @@ p {
 }
 
 .about-values .principle__text {
-  color: rgba(255, 255, 255, 0.88);
+  color: var(--text-secondary);
 }
 
 .about-values .principle__num {
@@ -1047,7 +1046,8 @@ p {
 }
 
 .about-closing {
-  background: linear-gradient(180deg, rgba(12, 16, 37, 0.96) 0%, rgba(8, 11, 25, 1) 100%);
+  background: var(--bg-base);
+  border-top: 1px solid var(--border);
   padding-block: 6rem;
   text-align: center;
 }
@@ -1239,7 +1239,7 @@ p {
 .process-step__num {
   font-size: 2rem;
   font-weight: 700;
-  color: rgba(255, 255, 255, 0.14);
+  color: rgba(26, 26, 26, 0.16);
   letter-spacing: -0.05em;
   line-height: 1;
   padding-top: 0.2rem;
