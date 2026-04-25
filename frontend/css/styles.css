@@ -1050,9 +1050,9 @@ p {
 }
 
 .about-values {
-  background: var(--bg-surface);
-  border-top: 1px solid var(--border);
-  border-bottom: 1px solid var(--border);
+  background: linear-gradient(180deg, rgba(18, 28, 49, 0.98) 0%, rgba(25, 39, 67, 0.98) 100%);
+  border-top: 1px solid rgba(209, 238, 235, 0.12);
+  border-bottom: 1px solid rgba(209, 238, 235, 0.12);
 }
 
 .about-values__intro {
@@ -1064,7 +1064,7 @@ p {
   display: block;
   margin-bottom: 0.6rem;
   font-size: 1rem;
-  color: var(--text-muted);
+  color: rgba(255, 255, 255, 0.9);
 }
 
 .about-values__heading {
@@ -1082,9 +1082,9 @@ p {
 }
 
 .about-values .principle {
-  border: 1px solid var(--border);
+  border: 1px solid rgba(209, 238, 235, 0.5);
   border-radius: 6px;
-  background: var(--bg-base);
+  background: rgba(7, 12, 24, 0.16);
   text-align: center;
   padding: 1.5rem 1.25rem;
 }
@@ -1094,7 +1094,7 @@ p {
 }
 
 .about-values .principle__text {
-  color: var(--text-secondary);
+  color: rgba(255, 255, 255, 0.88);
 }
 
 .about-values .principle__num {
@@ -1107,8 +1107,7 @@ p {
 }
 
 .about-closing {
-  background: var(--bg-base);
-  border-top: 1px solid var(--border);
+  background: linear-gradient(180deg, rgba(12, 16, 37, 0.96) 0%, rgba(8, 11, 25, 1) 100%);
   padding-block: 6rem;
   text-align: center;
 }
@@ -1299,7 +1298,7 @@ p {
 .process-step__num {
   font-size: 2rem;
   font-weight: 700;
-  color: rgba(26, 26, 26, 0.22);
+  color: rgba(255, 255, 255, 0.14);
   letter-spacing: -0.05em;
   line-height: 1;
   padding-top: 0.2rem;
@@ -1445,6 +1444,18 @@ p {
   pointer-events: none;
 }
 
+.home-page .hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 110%;
+  background: linear-gradient(145deg, rgba(27, 56, 112, 0.48) 0%, rgba(19, 42, 95, 0.28) 100%);
+  clip-path: polygon(22% 0%, 100% 0%, 100% 100%, 0% 100%);
+  pointer-events: none;
+}
+
 .home-page .hero .container {
   position: relative;
   z-index: 1;
@@ -1527,7 +1538,7 @@ p {
 
 .home-page .card:hover {
   background: #0c1728;
-  box-shadow: none;
+  box-shadow: inset 0 0 0 1px rgba(209, 238, 235, 0.28);
 }
 
 .home-page .card__title {
@@ -1543,7 +1554,7 @@ p {
 }
 
 .home-page .statement {
-  background: transparent;
+  background: rgba(9, 17, 33, 0.72);
   border-top: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
   position: relative;
@@ -1871,5 +1882,9 @@ p {
 
   .cta-section__text {
     margin-inline: 0;
+  }
+
+  .home-page .hero::after {
+    display: none;
   }
 }
