@@ -242,6 +242,31 @@ p {
   background: rgba(0, 0, 0, 0.04);
 }
 
+/* Nav contact icons */
+.nav__contacts {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-left: 1.25rem;
+  padding-left: 1.25rem;
+  border-left: 1px solid var(--border);
+}
+
+.nav__contact-link {
+  display: inline-flex;
+  align-items: center;
+  color: var(--text-muted);
+  transition: color var(--tr);
+}
+
+.nav__contact-link:hover {
+  color: var(--text-primary);
+}
+
+.nav__contact-link svg {
+  display: block;
+}
+
 /* 7. Burger Menu
    ============================================================ */
 .burger {
@@ -318,6 +343,27 @@ p {
   margin-top: var(--sp-md);
 }
 
+.mobile-nav__contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: var(--sp-md);
+  padding-top: var(--sp-md);
+  border-top: 1px solid var(--border);
+  width: 100%;
+}
+
+.mobile-nav__contact {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  transition: color var(--tr);
+}
+
+.mobile-nav__contact:hover {
+  color: var(--text-primary);
+}
+
 /* 8. Hero
    ============================================================ */
 .hero {
@@ -330,6 +376,16 @@ p {
 
 .hero__h1 {
   margin-bottom: var(--sp-md);
+}
+
+.hero__tagline {
+  font-size: 1.05rem;
+  font-weight: 400;
+  color: var(--text-secondary);
+  padding-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border);
+  max-width: 52ch;
 }
 
 .hero__text {
@@ -494,7 +550,7 @@ p {
 
 .contact-card:hover {
   border-color: var(--border-hover);
-  background: rgba(255, 255, 255, 0.045);
+  background: var(--bg-surface);
   transform: translateY(-1px);
 }
 
@@ -1085,7 +1141,7 @@ p {
 
 .leit-card:hover {
   border-color: var(--border-hover);
-  background: rgba(255, 255, 255, 0.04);
+  background: var(--bg-surface);
   transform: translateY(-1px);
 }
 
@@ -1110,21 +1166,20 @@ p {
 }
 
 .detail-block {
-  display: grid;
-  grid-template-columns: 280px 1fr;
-  gap: var(--sp-lg);
+  display: block;
   padding-block: 2.25rem;
   border-bottom: 1px solid var(--border);
   transition: border-color var(--tr), background var(--tr);
 }
 
 .detail-block:hover {
-  border-color: rgba(209, 238, 235, 0.24);
-  background: rgba(255, 255, 255, 0.01);
+  border-color: var(--border-hover);
+  background: var(--bg-surface);
 }
 
 .detail-block__heading {
-  max-width: 260px;
+  max-width: none;
+  margin-bottom: 0.6rem;
 }
 
 .detail-block__body {
@@ -1233,13 +1288,13 @@ p {
 }
 
 .process-step:hover {
-  background: rgba(255,255,255,0.016);
+  background: var(--bg-surface);
 }
 
 .process-step__num {
   font-size: 2rem;
   font-weight: 700;
-  color: rgba(26, 26, 26, 0.16);
+  color: rgba(26, 26, 26, 0.22);
   letter-spacing: -0.05em;
   line-height: 1;
   padding-top: 0.2rem;
@@ -1357,12 +1412,13 @@ p {
 }
 
 .home-page .hero__h1 {
-  max-width: 15ch;
-  margin-bottom: 1.35rem;
-  font-size: clamp(2.4rem, 5vw, 3.8rem);
-  line-height: 1.08;
-  font-weight: 600;
-  letter-spacing: -0.02em;
+  max-width: 20ch;
+  margin-bottom: 1.1rem;
+  font-size: clamp(2.2rem, 5vw, 3.5rem);
+  line-height: 1.1;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
 .home-page .hero__text {
@@ -1438,7 +1494,7 @@ p {
 }
 
 .home-page .statement {
-  background: var(--bg-surface);
+  background: var(--bg-base);
   border-top: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
 }
@@ -1639,7 +1695,8 @@ p {
    ============================================================ */
 @media (max-width: 900px) {
   .nav__list,
-  .nav__cta {
+  .nav__cta,
+  .nav__contacts {
     display: none;
   }
 
