@@ -33,7 +33,7 @@
   --header-h:  68px;
 
   /* Radius */
-  --r-pill: 100px;
+  --r-pill: 8px;
   --r-sm:   4px;
   --r-md:   8px;
   --r-lg:   14px;
@@ -135,9 +135,9 @@ p {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  padding: 0.75rem 1.75rem;
+  padding: 0.78rem 1.5rem;
   border-radius: var(--r-pill);
-  font-size: 0.9rem;
+  font-size: 0.88rem;
   font-weight: 500;
   letter-spacing: 0.01em;
   transition: background var(--tr), border-color var(--tr), color var(--tr), opacity var(--tr), transform var(--tr), box-shadow var(--tr);
@@ -155,7 +155,7 @@ p {
   background: #fff;
   opacity: 0.96;
   transform: translateY(-1px);
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.16);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.14);
 }
 
 .btn--outline {
@@ -168,6 +168,7 @@ p {
   border-color: var(--text-primary);
   background: rgba(255, 255, 255, 0.04);
   transform: translateY(-1px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
 }
 
 /* 6. Header & Navigation
@@ -199,24 +200,24 @@ p {
 
 .header__logo-image {
   display: block;
-  width: clamp(176px, 24vw, 244px);
+  width: clamp(168px, 22vw, 230px);
   height: auto;
 }
 
 .nav {
   display: flex;
   align-items: center;
-  gap: 1.25rem;
+  gap: 1rem;
 }
 
 .nav__list {
   display: flex;
   align-items: center;
-  gap: 1.6rem;
+  gap: 1.4rem;
 }
 
 .nav__link {
-  font-size: 0.98rem;
+  font-size: 0.94rem;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.84);
   letter-spacing: 0.01em;
@@ -231,12 +232,12 @@ p {
 .nav__cta {
   display: inline-flex;
   min-height: 2.5rem;
-  padding: 0.62rem 1rem;
+  padding: 0.58rem 0.92rem;
   margin-left: 0.35rem;
   border-color: rgba(209, 238, 235, 0.24);
-  background: rgba(9, 17, 33, 0.34);
+  background: rgba(9, 17, 33, 0.26);
   color: rgba(255, 255, 255, 0.82);
-  font-size: 0.82rem;
+  font-size: 0.8rem;
   font-weight: 500;
 }
 
@@ -328,7 +329,7 @@ p {
 }
 
 .hero__inner {
-  max-width: 860px;
+  max-width: 820px;
 }
 
 .hero__h1 {
@@ -353,12 +354,29 @@ p {
 
 /* Hero – page variant (smaller) */
 .hero--page {
-  padding-block: var(--sp-xl);
+  padding-block: 4.5rem 4rem;
   border-bottom: 1px solid var(--border);
 }
 
 .hero--page .hero__h1 {
-  font-size: clamp(1.75rem, 4vw, 2.75rem);
+  font-size: clamp(1.9rem, 4vw, 2.55rem);
+}
+
+.hero--page .hero__inner {
+  max-width: 780px;
+}
+
+.hero--page .hero__text {
+  max-width: 48rem;
+  margin-bottom: 1rem;
+}
+
+.hero--page .hero__text:last-of-type {
+  margin-bottom: 0;
+}
+
+.hero--page .hero__actions {
+  margin-top: 1.5rem;
 }
 
 /* 9. Cards
@@ -380,8 +398,8 @@ p {
 .card:hover {
   border-color: var(--border-hover);
   background: var(--bg-elevated);
-  transform: translateY(-2px);
-  box-shadow: 0 16px 30px rgba(0, 0, 0, 0.16);
+  transform: translateY(-1px);
+  box-shadow: 0 12px 22px rgba(0, 0, 0, 0.14);
 }
 
 .card__label {
@@ -412,7 +430,7 @@ p {
 .card:hover .card__icon-image {
   transform: translateY(-1px);
   opacity: 0.96;
-  filter: drop-shadow(0 8px 18px rgba(0, 0, 0, 0.18));
+  filter: drop-shadow(0 6px 14px rgba(0, 0, 0, 0.16));
 }
 
 .card__title {
@@ -481,7 +499,7 @@ p {
 .contact-card:hover {
   border-color: var(--border-hover);
   background: rgba(255, 255, 255, 0.045);
-  transform: translateY(-2px);
+  transform: translateY(-1px);
 }
 
 .contact-card__title {
@@ -763,15 +781,15 @@ p {
 .footer {
   background: #050a15;
   border-top: 1px solid var(--border);
-  padding-block: 2.5rem 1.5rem;
+  padding-block: 2.2rem 1.35rem;
 }
 
 .footer__inner {
   display: grid;
   grid-template-columns: 88px 1.1fr 1fr 1fr;
-  gap: 2.25rem;
+  gap: 2rem;
   align-items: start;
-  padding-bottom: 2rem;
+  padding-bottom: 1.7rem;
   border-bottom: 1px solid var(--border);
 }
 
@@ -783,7 +801,7 @@ p {
 
 .footer__mark-image {
   display: block;
-  width: 4.2rem;
+  width: 4rem;
   height: auto;
 }
 
@@ -797,8 +815,8 @@ p {
 }
 
 .footer__text {
-  font-size: 0.95rem;
-  line-height: 1.65;
+  font-size: 0.92rem;
+  line-height: 1.7;
   color: rgba(255, 255, 255, 0.72);
   max-width: 24ch;
 }
@@ -810,7 +828,7 @@ p {
 }
 
 .footer__link {
-  font-size: 0.85rem;
+  font-size: 0.84rem;
   color: rgba(255, 255, 255, 0.78);
   transition: color var(--tr);
 }
@@ -976,7 +994,7 @@ p {
 }
 
 .about-values {
-  background: linear-gradient(90deg, rgba(35, 54, 91, 1) 0%, rgba(60, 83, 133, 1) 100%);
+  background: linear-gradient(180deg, rgba(18, 28, 49, 0.98) 0%, rgba(25, 39, 67, 0.98) 100%);
   border-top: 1px solid rgba(209, 238, 235, 0.12);
   border-bottom: 1px solid rgba(209, 238, 235, 0.12);
 }
@@ -1008,9 +1026,9 @@ p {
 }
 
 .about-values .principle {
-  border: 1px solid rgba(209, 238, 235, 0.8);
+  border: 1px solid rgba(209, 238, 235, 0.5);
   border-radius: 6px;
-  background: transparent;
+  background: rgba(7, 12, 24, 0.16);
   text-align: center;
   padding: 1.5rem 1.25rem;
 }
@@ -1072,7 +1090,7 @@ p {
 .leit-card:hover {
   border-color: var(--border-hover);
   background: rgba(255, 255, 255, 0.04);
-  transform: translateY(-2px);
+  transform: translateY(-1px);
 }
 
 .leit-card__num {
@@ -1092,21 +1110,21 @@ p {
 
 .leistungen-detail {
   border-bottom: 1px solid var(--border);
-  padding-block: var(--sp-xl);
+  padding-block: calc(var(--sp-xl) - 0.4rem);
 }
 
 .detail-block {
   display: grid;
   grid-template-columns: 280px 1fr;
   gap: var(--sp-lg);
-  padding-block: var(--sp-lg);
+  padding-block: 2.25rem;
   border-bottom: 1px solid var(--border);
   transition: border-color var(--tr), background var(--tr);
 }
 
 .detail-block:hover {
   border-color: rgba(209, 238, 235, 0.24);
-  background: rgba(255, 255, 255, 0.012);
+  background: rgba(255, 255, 255, 0.01);
 }
 
 .detail-block__heading {
@@ -1150,6 +1168,7 @@ p {
 .services-contact {
   border-top: 1px solid var(--border);
   text-align: center;
+  padding-top: calc(var(--sp-xl) - 0.35rem);
 }
 
 .services-contact__intro {
@@ -1187,7 +1206,7 @@ p {
 }
 
 .recruiting-process {
-  padding-top: calc(var(--sp-xl) - 0.5rem);
+  padding-top: calc(var(--sp-xl) - 0.8rem);
 }
 
 .recruiting-process__intro {
@@ -1218,13 +1237,13 @@ p {
 }
 
 .process-step:hover {
-  background: rgba(255,255,255,0.02);
+  background: rgba(255,255,255,0.016);
 }
 
 .process-step__num {
   font-size: 2rem;
   font-weight: 700;
-  color: var(--bg-elevated);
+  color: rgba(255, 255, 255, 0.14);
   letter-spacing: -0.05em;
   line-height: 1;
   padding-top: 0.2rem;
@@ -1451,6 +1470,7 @@ p {
 
 .home-page .card:hover {
   background: #0c1728;
+  box-shadow: none;
 }
 
 .home-page .card__title {
@@ -1498,8 +1518,8 @@ p {
   position: absolute;
   top: 0;
   left: 50%;
-  width: 6rem;
-  height: 1.4rem;
+  width: 4.6rem;
+  height: 0.95rem;
   transform: translate(-50%, -50%);
   background: linear-gradient(180deg, rgba(213, 239, 235, 0.95) 0%, rgba(213, 239, 235, 0.72) 100%);
   clip-path: polygon(0 0, 50% 100%, 100% 0);
@@ -1748,6 +1768,10 @@ p {
 
   .header__logo-image {
     width: clamp(150px, 44vw, 176px);
+  }
+
+  .hero--page {
+    padding-block: 3.75rem 3.25rem;
   }
 
   .cards {
