@@ -145,12 +145,19 @@ function setFieldError(field, errMsg, message) {
 
 function showSuccessState(form) {
   var btn = form.querySelector('[type="submit"]');
+  var existingNote = form.querySelector('.form__static-note');
+
+  if (existingNote) {
+    existingNote.remove();
+  }
+
   if (btn) {
     btn.style.display = 'none';
   }
-  var note = document.createElement('p');
+
+  var note = document.createElement('div');
   note.className   = 'form__static-note';
-  note.textContent = 'Bitte senden Sie uns Ihre Anfrage direkt per E-Mail an info@commandeurconsulting.de.';
+  note.innerHTML = '<strong>Hinweis</strong><span>Bitte senden Sie uns Ihre Anfrage direkt per E-Mail an <a href="mailto:info@commandeurconsulting.de">info@commandeurconsulting.de</a>.</span>';
   form.appendChild(note);
 }
 
